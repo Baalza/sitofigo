@@ -1,14 +1,1 @@
-// Dipendenze configurazione
-const body_parser = require('body-parser');
-const morgan = require('morgan');
-const compression = require('compression');
-const dotenv = require('dotenv');
-
-// Esportazione modulo configurazione
-module.exports = (server) => {
-    server.use(body_parser.json()); // Parse del body in formato JSON
-    server.use(body_parser.urlencoded({extended: true})); // Parse del body in formato url encoded
-    server.use(morgan('dev')); // Log delle richieste in console
-    server.use(compression()); // Compressione della chiamata
-    dotenv.config({path: '.env'});
-};
+git push -u origin master
