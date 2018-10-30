@@ -13,7 +13,7 @@ require ('./configs/database_configuration');
 require ('./configs/realtionship_configuration');
 server.set('view engine', 'pug');
 server.set("views", path.join(__dirname, "views"));
-server.use(express.static('public'));
+server.use(express.static('dashboard'));
 
 //carico le variabili per configurare il server
 const SERVER_PORT = process.env.SERVER_PORT;
