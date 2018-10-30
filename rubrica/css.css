@@ -1,0 +1,13 @@
+
+
+nome{
+    display:  block;
+    text-align: left;
+    color: green;
+    font-size: 18pt;
+}
+cognome,numero{
+    text-align: left;
+    color: blue;
+    font-size: 18pt;
+}

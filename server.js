@@ -1,14 +1,18 @@
 //dipendenze del server
 const express = require ('express');
+const path = require ("path");
 const chalk = require('chalk');
 
 //istanziamento server
 const server = express();
 
+
 //configurazioni
 require ('./configs/server_configuration')(server);
 require ('./configs/database_configuration');
 require ('./configs/realtionship_configuration');
+server.set('view engine', 'pug');
+server.set("views", path.join(__dirname, "views"));
 
 //carico le variabili per configurare il server
 const SERVER_PORT = process.env.SERVER_PORT;

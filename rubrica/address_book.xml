@@ -1,0 +1,20 @@
+<rubrica>
+<?xml-stylesheet type="text/css" href = "css.css"?>
+<contatto>
+    <nome>Simone</nome>
+    <cognome>Giannino</cognome>
+    <numero>3451348732</numero>
+ </contatto>
+
+    <contatto>
+    <nome>Niccolò</nome>
+    <cognome>Balzarotti</cognome>
+    <numero>3451348732</numero>
+ </contatto>
+
+ <contatto>
+    <nome>Awnee</nome>
+    <cognome>Gaurav</cognome>
+    <numero>3451348732</numero>
+ </contatto>
+ </rubrica>
