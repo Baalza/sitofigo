@@ -4,7 +4,7 @@ const authenticationController = require ("../controllers/authentication_control
 const routesAuthenticationn = require('./routes_authenticationn');
 module.exports = () => {
     router.route('/login').get(authenticationController.log);
-    
+    router.route('/register').get(authenticationController.reg);
         
     return router;
 };
