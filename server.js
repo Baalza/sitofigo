@@ -2,6 +2,7 @@
 const express = require ('express');
 const path = require ("path");
 const chalk = require('chalk');
+const express_static = require('express').static;
 
 //istanziamento server
 const server = express();
@@ -13,7 +14,7 @@ require ('./configs/database_configuration');
 require ('./configs/realtionship_configuration');
 server.set('view engine', 'pug');
 server.set("views", path.join(__dirname, "views"));
-server.use(express.static(path.join(__dirname, './public')));
+server.use(express_static(path.join(__dirname, '/public')));
 
 //carico le variabili per configurare il server
 const SERVER_PORT = process.env.SERVER_PORT;
